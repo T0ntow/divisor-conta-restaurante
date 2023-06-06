@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+main #content-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+main #content-box #content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+main h1 {
+    font-size: 2.3rem;
+    padding: 15px;
+}
+
+main .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+main .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px;
+
+    flex-direction: column;
+}
+
+
+main .box-cliente {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+    flex-direction: column;
+}
+
+main .box-cliente #box-taxa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25%;
+}
+
+main .box-cliente #box-taxa input {
+    height: 20px;
+    width: 20px;
+}
+
+main .box h3 {
+    font-size: 1.5rem;
+}
+
+main .box input,
+select {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 50%;
+    height: 35px;
+
+    flex-direction: row;
+    font-size: 1.5rem;
+    border-radius: 5px;
+
+    border: 2px solid rgb(51, 51, 51);
+    outline: none;
+
+    border-radius: 5px;
+}
+
+main .box select {
+    height: 100px;
+}
+
+main .box input:focus {
+    border: 3px solid rgb(0, 0, 0);
+}
+
+main .box button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border: none;
+    height: 30px;
+
+    cursor: pointer;
+    border-radius: 5px;
+
+    font-size: 1.3rem;
+    padding: 10px;
+    background-color: rgb(135, 188, 167);
+    margin: 15px 0px;
+}
+
+main .clientes-box {
+    height: 200px;
+    max-height: 250px;
+    width: 70%;
+    padding: 15px;
+    border-radius: 10px;
+
+    overflow-y: scroll;
+
+    background-color: rgb(193, 193, 193);
+}
+
+main .clientes-box ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main .clientes-box ul li {
+    font-size: 1.2rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+main .produtos-box {
+    height: 200px;
+    max-height: 250px;
+    width: 70%;
+    padding: 15px;
+    border-radius: 10px;
+
+    overflow-y: scroll;
+
+    background-color: rgb(193, 193, 193);
+}
+
+main .produtos-box ul li {
+    font-size: 1.2rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+main .produtos-box .produto-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border: none;
+    height: 30px;
+    margin: 20px auto;
+
+    cursor: pointer;
+    border-radius: 5px;
+
+    font-size: 1.3rem;
+    padding: 10px;
+    background-color: rgb(135, 188, 167);
+
+}
+
+main .result {
+    height: 200px;
+    max-height: 250px;
+    padding: 15px;
+    border-radius: 10px;
+
+    width: 50%;
+    margin: 20px auto;
+}
+
+main .result ul {
+    height: 200px;
+    max-height: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+
+    overflow-y: scroll;
+
+    background-color: rgb(193, 193, 193);
+}
+
+main .result ul li {
+    font-size: 1.2rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    main #content-box {
+        flex-direction: column;
+    }
+
+    main .box input,
+    select {
+        width: 70%;
+    }
+
+}
