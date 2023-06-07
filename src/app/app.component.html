@@ -90,7 +90,7 @@
     <div>
       <ul>
         <li *ngFor="let cliente of listaCliente">
-          <p><strong>{{ cliente.nome }}: R$ {{ cliente.gasto }}</strong></p>
+          <p><strong>{{ cliente.nome }}: R$ {{ cliente.gasto.toFixed(2) }}</strong></p>
         </li>
       </ul>
     </div>
