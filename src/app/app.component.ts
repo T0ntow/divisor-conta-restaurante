@@ -62,7 +62,13 @@ export class AppComponent {
         }
       });
 
-      this.listaProduto.push(novoProduto);
+      if (this.consumidoresSelecionados.length > 0) {
+        this.listaProduto.push(novoProduto); 
+      }
+      else {
+        alert("selecione quem consumiu para continuar")
+      }
+      
     } else {
       alert('Insira um cliente para continuar');
     }
